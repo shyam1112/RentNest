@@ -3,6 +3,7 @@ import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFonts } from 'expo-font';
 import { useRef } from 'react';
+import Login from './Login';
 
 export default function Intro() {
     const { width, height } = Dimensions.get('window');
@@ -42,7 +43,7 @@ export default function Intro() {
                                 }}>
                                 <View style={styles.btn}>
                                     <Text style={{textAlign:'center',textAlignVertical:'center',flex:1,fontSize:19,fontWeight:'600'}}>
-                                        Get Started --
+                                        Get Started    {">>>"}
                                     </Text>
                                 </View>
                                 </Pressable>
@@ -51,21 +52,9 @@ export default function Intro() {
                     </View>
 
                     <View style={{ flex: 1, justifyContent: 'center', width, height }}>
-
-                        <ImageBackground
-                            source={require('./images/For-sale.jpg')}
-                            resizeMode="stretch"
-                            style={[styles.image, { width: 300, height: 300 }]}
-                        >
-                        </ImageBackground>
-                        <View>
-
-                        </View>
+                        <Login />
                     </View>
 
-                    <View style={{ width, height }}>
-                        <Text>Hello</Text>
-                    </View>
                 </ScrollView>
             </SafeAreaView>
         </View>
