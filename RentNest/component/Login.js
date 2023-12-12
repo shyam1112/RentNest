@@ -87,6 +87,10 @@ export default function Login() {
     setToggle(!toggle);
   }
 
+  const gotomainpage= ()=>{
+    navigation.navigate('feed');
+  }
+
   return (
     <View style={{ flex: 1 }}>
       <KeyboardAvoidingView behavior="padding" style={{ flex: 1 }}>
@@ -98,11 +102,17 @@ export default function Login() {
             source={require('./images/loginback.png')}
             style={{ width, height }}
           >
+ 
             <View style={{ flex: 1 }}>
-              <Text style={{ textAlign: 'center', textAlignVertical: 'center', marginTop: 100 }}></Text>
-              <Text style={{ textAlign: 'center', textAlignVertical: 'center', fontSize: 28, fontWeight: '700', color: '#B6ECBF', marginTop: 30, }}>-*--*--*--*--*-</Text>
+              <Pressable onPress={gotomainpage}>
+             <View style={{ justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+              <Text style={{textAlign: 'right',marginTop: 15,marginRight:15,fontSize:15,color:'blue',fontWeight:'600',textDecorationLine:'underline',backgroundColor:'#F4FCF9',padding:5,borderRadius:11 }}>SKIP</Text>
+             </View>
+              </Pressable>
+
+              <Text style={{ textAlign: 'center', textAlignVertical: 'center', fontSize: 28, fontWeight: '700', color: 'black', marginTop: 100, }}>--------------</Text>
               <Text style={{ textAlign: 'center', textAlignVertical: 'center', fontSize: 28, fontWeight: '600', color: '#B6ECBF', shadowColor: 'blue', elevation: 5 }}>RentNest</Text>
-              <Text style={{ textAlign: 'center', textAlignVertical: 'center', fontSize: 28, fontWeight: '700', color: '#B6ECBF' }}>-*--*--*--*--*-</Text>
+              <Text style={{ textAlign: 'center', textAlignVertical: 'center', fontSize: 28, fontWeight: '700', color: 'black' }}>--------------</Text>
 
             </View>
             <View style={{ flex: 1.5, borderRadius: 20 }}>
