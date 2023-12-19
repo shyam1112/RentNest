@@ -47,23 +47,11 @@ export default function App({ navigation }) {
         name="feed"
         component={Feed}
         options={
-          {title:"RentNest",
-          headerTitleAlign:'center',
-            // headerShown:false
-            headerBackVisible:false,
-            headerLeft:()=><View>
-              <Image
-              source={require('./component/images/rentnestlogo.png')}
-              style={{width:28,height:28,}} 
-              />
-            </View>,
-            headerRight: () => (
-              <TouchableOpacity onPress={() => navigation.openDrawer()}>
-                <Text>Menu</Text>
-              </TouchableOpacity>
-            ),
+          {title:null,
+            headerShown:false
           }
         }
+        
         />
 
         <Stack.Screen
