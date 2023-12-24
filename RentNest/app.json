@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RentNest",
-    "slug": "RentNest",
+    "slug": "rentnest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.shyamsardhara.rentnest"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7db0cff0-5fc8-466d-b66b-b3bcc1657c38"
+      }
+    },
+    "owner": "shyamsardhara"
   }
 }
