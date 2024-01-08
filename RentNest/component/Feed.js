@@ -52,7 +52,7 @@ export default function Feed() {
                   borderRadius: 65,
                 }}
               />
-              <Text style={{ marginTop: 20 }}>Hello, Owner</Text>
+              <Text style={{ marginTop: 20 }}>Hello,</Text>
             </View>
             <DrawerItemList {...props} />
           </SafeAreaView>
